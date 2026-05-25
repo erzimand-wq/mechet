@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920">
+  <meta name="format-detection" content="telephone=no">
+  <title>Экстерьер Соборной мечети Санкт-Петербурга</title>
+  <meta name="description" content="Экстерьер Соборной мечети Санкт-Петербурга: купол, портал, минареты и основные факты.">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/exterior/layout.css?v=3">
+  <link rel="stylesheet" href="assets/css/exterior/components.css?v=3">
+  <script type="module" src="assets/vendor/model-viewer.min.js"></script>
+  <script src="assets/js/main.js?v=2" defer></script>
+</head>
+<body>
+  <main class="site-page" data-page>
+    <section class="hero" aria-label="Соборная мечеть Санкт-Петербурга">
+      <div class="hero__canvas">
+        <header class="site-header" aria-label="Навигация">
+          <a href="index.html">
+            <img class="decor decor--minaret" src="assets/images/minaret.svg" alt="" width="112" height="157">
+          </a>
+          <img class="decor decor--left" src="assets/images/left-ornament.svg" alt="" width="200" height="119">
+          <img class="decor decor--right" src="assets/images/right-ornament.svg" alt="" width="200" height="118">
+          <img class="decor decor--line" src="assets/images/top-line.svg" alt="" width="1629" height="11">
+
+          <nav class="main-nav" aria-label="Основная навигация">
+            <a class="main-nav__link main-nav__link--history" href="history.html">история</a>
+            <a class="main-nav__link main-nav__link--rites" href="obryad.html">обряды</a>
+            <a class="main-nav__link main-nav__link--exterior" href="exterior.html">экстерьер</a>
+            <a class="main-nav__link main-nav__link--interior" href="interior.html">интерьер</a>
+            <a class="main-nav__link main-nav__link--tourists" href="travel.html">для туристов</a>
+          </nav>
+        </header>
+
+        <section class="intro" id="exterior" aria-label="Экстерьер мечети">
+          <model-viewer class="intro__media" src="assets/models/mosque-painted.glb" camera-controls tone-mapping="neutral" shadow-intensity="1" auto-rotate min-camera-orbit="auto 67deg auto" max-camera-orbit="auto 67deg auto" camera-orbit="-910.3deg 67deg 59.45m" field-of-view="30deg">
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+          <img class="intro__title" src="assets/images/title-group.svg" alt="Соборная мечеть Санкт-Петербурга" width="590" height="69">
+          <p class="intro__text">
+            Соборная мечеть Санкт-Петербурга — это архитектурный шедевр ХХ века.
+            Ее уникальность заключается в удивительном сплаве северного модерна и
+            традиций среднеазиатского зодчества .
+          </p>
+
+          <dl class="facts" aria-label="Факты о мечети">
+            <dt class="facts__label facts__label--capacity">ВМЕСТИМОСТЬ</dt>
+            <dd class="facts__value facts__value--capacity">5000ч.</dd>
+            <dt class="facts__label facts__label--size">РАЗМЕР</dt>
+            <dd class="facts__value facts__value--size">32х45м.</dd>
+          </dl>
+
+          <nav class="feature-nav" aria-label="Архитектурные элементы">
+            <a class="feature-button feature-button--dome" href="cupol.html">КУПОЛ</a>
+            <a class="feature-button feature-button--portal" href="portal.html">ПОРТАЛ</a>
+            <a class="feature-button feature-button--minarets" href="minarets.html">МИНАРЕТЫ</a>
+          </nav>
+        </section>
+
+        <footer class="site-footer" aria-label="Подвал сайта">
+          <div class="site-footer__panel" aria-hidden="true"></div>
+          <img class="site-footer__ornament" src="assets/images/history/footer-ornament.svg" alt="" width="1776" height="440">
+          <img class="site-footer__placeholder" src="assets/images/footer-placeholder.png" alt="" width="500" height="320" aria-hidden="true">
+          <nav class="footer-nav" aria-label="Навигация в подвале">
+            <a class="footer-nav__link footer-nav__link--history" href="history.html">история</a>
+            <a class="footer-nav__link footer-nav__link--rites" href="obryad.html">обряды</a>
+            <a class="footer-nav__link footer-nav__link--exterior" href="exterior.html">экстерьер</a>
+            <a class="footer-nav__link footer-nav__link--interior" href="interior.html">интерьер</a>
+            <a class="footer-nav__link footer-nav__link--tourists" href="travel.html">для туристов</a>
+          </nav>
+          <a class="social-link social-link--vk" href="#" aria-label="ВКонтакте">
+            <img src="assets/images/history/social-vk.svg" alt="" width="65" height="63">
+          </a>
+          <a class="social-link social-link--telegram" href="#" aria-label="Telegram">
+            <img src="assets/images/history/social-telegram.svg" alt="" width="98" height="58">
+          </a>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
